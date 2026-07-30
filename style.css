@@ -210,11 +210,11 @@ opacity:.8;
 }
 
 .swirlz-logo img{
-    width:420px;
+    width:380px;
     max-width:90%;
     height:auto;
     display:block;
-    margin:0 auto 50px;
+    margin:0 auto 20px;
 }
 
 .subtitle{
@@ -225,11 +225,12 @@ opacity:.8;
 }
 
 .arrow{
-    font-size:46px;
+    font-size:48px;
     color:#ffffff;
     text-align:center;
-    margin-top:30px;
-    animation:bounce 1.8s infinite;
+    margin-top:10px;
+    margin-bottom:20px;
+    animation:bounce 1.6s infinite;
 }
 
 @keyframes bounce{
