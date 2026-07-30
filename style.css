@@ -130,3 +130,75 @@ transform:translateY(10px);
 }
 
 }
+.flavor{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+scroll-snap-align:start;
+
+}
+
+.mixed-berry{
+
+background:linear-gradient(
+180deg,
+#000 0%,
+#3b1023 45%,
+#8b1538 100%
+);
+
+}
+
+.flavor-content{
+
+text-align:center;
+
+}
+
+.pack-placeholder{
+
+width:240px;
+
+height:420px;
+
+border:3px dashed rgba(255,255,255,.25);
+
+border-radius:25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:auto;
+
+font-size:18px;
+
+margin-bottom:35px;
+
+}
+
+.flavor h2{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.flavor p{
+
+font-size:20px;
+
+opacity:.8;
+
+}
