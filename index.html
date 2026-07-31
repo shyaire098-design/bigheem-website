@@ -1,54 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Big Heem Exotics | SWIRLZ</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<section class="hero">
+<!-- HERO -->
+
+<section class="hero" id="hero">
 
 <div class="brand-logo">
-    <img src="7C4B32E9-D916-4DA1-97C8-093F6785C276.png" alt="Big Heem Exotics">
+<img src="bigheem-logo.png" alt="Big Heem Exotics">
 </div>
 
 <div class="swirlz-logo">
-    <img src="B9B5A619-7058-4417-AB4C-55C5DAA8B566.png" alt="SWIRLZ">
+<img src="swirlz-logo.png" alt="SWIRLZ">
 </div>
 
-<div class="arrow">
-    ↓
+<div class="arrow" id="arrow">
+↓
 </div>
 
-</section> <section class="flavor mixed-berry">
+</section>
 
-<div class="flavor-content">
+<!-- LOADING SCREEN -->
 
-<div class="pack-placeholder">
+<section class="loading-screen" id="loading">
 
-PACK IMAGE
+<div class="packs">
+
+<img src="mixed-berry.png" class="pack pack1" alt="Mixed Berry">
+
+<img src="dragonfruit-bubblegum.png" class="pack pack2" alt="Dragonfruit Bubblegum">
+
+<img src="banana-mochi.png" class="pack pack3" alt="Banana Mochi">
 
 </div>
 
-<h2>Mixed Berry</h2>
+<h2 class="loading-text">
+Checking your pack<span id="dots">.</span>
+</h2>
+
+</section>
+
+<!-- WINNER -->
+
+<section class="result winner hidden" id="winner">
+
+<h1>🏆 CONGRATULATIONS! 🏆</h1>
+
+<h2>🎉 YOU FOUND A WINNING PACK! 🎉</h2>
+
+<h3>FREE 3.5 OF HEEMZ CANDY</h3>
+
+<div class="code">
+
+HEEM-XXXX-XXXX
+
+</div>
 
 <p>
-Sweet • Fruity • Premium Flat Pops
+
+⚠️ This redemption code is valid for ONE-TIME USE ONLY.
+
 </p>
 
-</div>
+<p>
+
+Once redeemed, this code is permanently invalid.
+
+</p>
+
+</section>
+
+<!-- LOSER -->
+
+<section class="result loser hidden" id="loser">
+
+<h1>😔 Better Luck Next Time!</h1>
+
+<p>
+
+This pack wasn't a winner.
+
+</p>
+
+<a
+href="https://www.instagram.com/bigboss.kil"
+target="_blank">
+
+🔥 Follow @BigHeemExotics 🍭
+
+</a>
 
 </section>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
