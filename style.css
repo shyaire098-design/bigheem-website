@@ -5,222 +5,186 @@ box-sizing:border-box;
 }
 
 html{
-
 scroll-behavior:smooth;
-
 }
 
 body{
-
 background:#000;
 color:#fff;
 font-family:Arial,Helvetica,sans-serif;
 overflow-x:hidden;
-
 }
+
+/* HERO */
 
 .hero{
-
-min-height:100vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:20px;
-
-}
-
-.brand-logo{
-
-font-size:18px;
-
-letter-spacing:5px;
-
-opacity:0;
-
-animation:fadeIn .8s forwards;
-
-}
-
-.swirlz-logo{
-
-font-size:82px;
-
-font-weight:900;
-
-margin-top:18px;
-
-opacity:0;
-
-animation:fadeIn 1s forwards;
-
-animation-delay:.4s;
-
-}
-
-.subtitle{
-
-font-size:22px;
-
-margin-top:15px;
-
-opacity:0;
-
-animation:fadeIn 1s forwards;
-
-animation-delay:.8s;
-
-}
-
-@keyframes fadeIn{
-
-from{
-
-opacity:0;
-transform:translateY(20px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-@keyframes bounce{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(10px);
-
-}
-
-}
-.flavor{
-
 height:100vh;
-
 display:flex;
-
+flex-direction:column;
 justify-content:center;
-
 align-items:center;
-
-padding:40px;
-
-scroll-snap-align:start;
-
-}
-
-.mixed-berry{
-
-background:linear-gradient(
-180deg,
-#000 0%,
-#3b1023 45%,
-#8b1538 100%
-);
-
-}
-
-.flavor-content{
-
 text-align:center;
-
+padding:20px;
 }
 
-.pack-placeholder{
-
-width:240px;
-
-height:420px;
-
-border:3px dashed rgba(255,255,255,.25);
-
-border-radius:25px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-margin:auto;
-
-font-size:18px;
-
-margin-bottom:35px;
-
-}
-
-.flavor h2{
-
-font-size:42px;
-
-margin-bottom:12px;
-
-}
-
-.flavor p{
-
-font-size:20px;
-
-opacity:.8;
-
-}
 .brand-logo img{
-    width:180px;
-    height:auto;
-    display:block;
-    margin:0 auto 40px;
+width:180px;
+height:auto;
+margin-bottom:40px;
+animation:fadeIn .8s forwards;
 }
 
 .swirlz-logo img{
-    width:380px;
-    max-width:90%;
-    height:auto;
-    display:block;
-    margin:0 auto 20px;
-}
-
-.subtitle{
-    font-size:32px;
-    color:white;
-    text-align:center;
-    margin-bottom:80px;
+width:380px;
+max-width:90%;
+height:auto;
+margin-bottom:70px;
+animation:fadeIn 1.2s forwards;
 }
 
 .arrow{
-    font-size:48px;
-    color:#ffffff;
-    text-align:center;
-    margin-top:10px;
-    margin-bottom:20px;
-    animation:bounce 1.6s infinite;
+font-size:50px;
+cursor:pointer;
+animation:bounce 1.6s infinite;
+}
+
+/* LOADING */
+
+.loading-screen{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#000;
+}
+
+.packs{
+position:relative;
+width:340px;
+height:340px;
+margin-bottom:60px;
+}
+
+.pack{
+position:absolute;
+width:130px;
+height:auto;
+}
+
+.pack1{
+left:105px;
+top:0;
+animation:float1 3.2s ease-in-out infinite;
+}
+
+.pack2{
+left:0;
+top:150px;
+animation:float2 3.8s ease-in-out infinite;
+}
+
+.pack3{
+right:0;
+top:150px;
+animation:float3 3.5s ease-in-out infinite;
+}
+
+.loading-text{
+font-size:34px;
+font-weight:bold;
+}
+
+/* RESULT */
+
+.result{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:25px;
+}
+
+.result h1{
+font-size:44px;
+margin-bottom:20px;
+}
+
+.result h2{
+margin-bottom:20px;
+}
+
+.result h3{
+margin-bottom:30px;
+}
+
+.code{
+font-size:34px;
+font-weight:bold;
+padding:18px 28px;
+border:2px solid white;
+border-radius:12px;
+margin-bottom:30px;
+}
+
+.result a{
+color:#fff;
+font-size:26px;
+text-decoration:none;
+margin-top:30px;
+}
+
+.hidden{
+display:none;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 @keyframes bounce{
-    0%,100%{
-        transform:translateY(0);
-    }
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(12px);
+}
+}
 
-    50%{
-        transform:translateY(12px);
-    }
+@keyframes float1{
+0%,100%{
+transform:translateY(0) rotate(-3deg);
+}
+50%{
+transform:translateY(-18px) rotate(3deg);
+}
+}
+
+@keyframes float2{
+0%,100%{
+transform:translateY(0) rotate(4deg);
+}
+50%{
+transform:translateY(-14px) rotate(-3deg);
+}
+}
+
+@keyframes float3{
+0%,100%{
+transform:translateY(0) rotate(-4deg);
+}
+50%{
+transform:translateY(-20px) rotate(2deg);
+}
 }
