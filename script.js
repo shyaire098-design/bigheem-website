@@ -1,67 +1,116 @@
+// ===========================
+// SETTINGS
+// ===========================
+
+const isWinner = true;
+
+// Change this for each winning QR
+const redemptionCode = "HEEM-A7X4-K9P2";
+
+
+// ===========================
+// ELEMENTS
+// ===========================
+
 const loading = document.getElementById("loading");
+
 const dots = document.getElementById("dots");
 
-const winner = document.getElementById("winner");
-const loser = document.getElementById("loser");
+const winnerOverlay = document.getElementById("winnerOverlay");
 
-let dotCount = 1;
+const loserOverlay = document.getElementById("loserOverlay");
 
-// Wait 2 seconds after page loads
-window.onload = () => {
+const codeBox = document.getElementById("codeBox");
 
-    setTimeout(() => {
 
-        loading.scrollIntoView({
-            behavior: "smooth"
-        });
+// ===========================
+// SET CODE
+// ===========================
 
-        startLoading();
+codeBox.textContent = redemptionCode;
 
-    }, 2000);
 
-};
+// ===========================
+// ANIMATED DOTS
+// ===========================
 
-function startLoading(){
+let loadingStarted = false;
 
-    const dotAnimation = setInterval(() => {
+function animateDots(){
 
-        dotCount++;
+    let count = 1;
 
-        if(dotCount > 3){
-            dotCount = 1;
+    return setInterval(()=>{
+
+        count++;
+
+        if(count>3){
+            count=1;
         }
 
-        dots.textContent = ".".repeat(dotCount);
+        dots.textContent=".".repeat(count);
 
     },500);
 
-    // Change this later for QR logic
-    const isWinner = true;
+}
 
-    setTimeout(() => {
 
-        clearInterval(dotAnimation);
+// ===========================
+// START WHEN USER SCROLLS
+// ===========================
 
-        loading.style.display = "none";
+const observer = new IntersectionObserver((entries)=>{
+
+    if(entries[0].isIntersecting && !loadingStarted){
+
+        loadingStarted=true;
+
+        startLoading();
+
+    }
+
+},{
+    threshold:.6
+});
+
+observer.observe(loading);
+
+
+// ===========================
+// LOADING
+// ===========================
+
+function startLoading(){
+
+    const dotTimer=animateDots();
+
+    setTimeout(()=>{
+
+        clearInterval(dotTimer);
 
         if(isWinner){
 
-            winner.classList.remove("hidden");
-
-            winner.scrollIntoView({
-                behavior:"smooth"
-            });
+            winnerOverlay.classList.add("show");
 
         }else{
 
-            loser.classList.remove("hidden");
-
-            loser.scrollIntoView({
-                behavior:"smooth"
-            });
+            loserOverlay.classList.add("show");
 
         }
 
     },3000);
+
+}
+
+
+// ===========================
+// CLOSE
+// ===========================
+
+function closeOverlay(){
+
+    winnerOverlay.classList.remove("show");
+
+    loserOverlay.classList.remove("show");
 
 }
