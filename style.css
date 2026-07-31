@@ -21,7 +21,7 @@ overflow-x:hidden;
 
 .hero{
 
-height:100vh;
+min-height:100vh;
 
 display:flex;
 
@@ -76,24 +76,6 @@ opacity:0;
 animation:fadeIn 1s forwards;
 
 animation-delay:.8s;
-
-}
-
-.arrow{
-
-position:absolute;
-
-bottom:45px;
-
-font-size:38px;
-
-opacity:0;
-
-animation:
-
-fadeIn 1s forwards 1.2s,
-
-bounce 2s infinite 2s;
 
 }
 
