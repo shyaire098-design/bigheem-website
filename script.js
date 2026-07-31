@@ -1,28 +1,25 @@
-// Big Heem Exotics V2.0
-
-const arrow = document.getElementById("arrow");
 const loading = document.getElementById("loading");
-
 const dots = document.getElementById("dots");
 
 const winner = document.getElementById("winner");
 const loser = document.getElementById("loser");
 
-// CLICK ARROW
-
-arrow.addEventListener("click", () => {
-
-    loading.scrollIntoView({
-        behavior: "smooth"
-    });
-
-    startLoading();
-
-});
-
-// LOADING ANIMATION
-
 let dotCount = 1;
+
+// Wait 2 seconds after page loads
+window.onload = () => {
+
+    setTimeout(() => {
+
+        loading.scrollIntoView({
+            behavior: "smooth"
+        });
+
+        startLoading();
+
+    }, 2000);
+
+};
 
 function startLoading(){
 
@@ -38,8 +35,7 @@ function startLoading(){
 
     },500);
 
-    // CHANGE THIS TO FALSE WHEN USING LOSER QR
-
+    // Change this later for QR logic
     const isWinner = true;
 
     setTimeout(() => {
