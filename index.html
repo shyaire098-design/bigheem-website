@@ -1,120 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Big Heem Exotics | SWIRLZ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Big Heem Exotics | SWIRLZ</title>
+
+    <!-- Fredoka Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero" id="hero">
+    <section class="hero">
 
-<div class="brand-logo">
-<img src="bigheem-logo.png" alt="Big Heem Exotics">
-</div>
+        <img src="bigheem-logo.png" class="logo bigheem">
 
-<div class="swirlz-logo">
-<img src="swirlz-logo.png" alt="SWIRLZ">
-</div>
+        <img src="swirlz-logo.png" class="logo swirlz">
 
-<div class="arrow" id="arrow">
-↓
-</div>
+        <div class="scroll-arrow">
+            ↓
+        </div>
 
-</section>
+    </section>
 
-<!-- LOADING SCREEN -->
 
-<section class="loading-screen" id="loading">
+    <!-- LOADING -->
 
-<div class="packs">
+    <section id="loading" class="loading">
 
-<img src="mixed-berry.png" class="pack pack1" alt="Mixed Berry">
+        <div class="packs">
 
-<img src="dragonfruit-bubblegum.png" class="pack pack2" alt="Dragonfruit Bubblegum">
+            <img src="mixed-berry.png" class="pack pack1">
 
-<img src="banana-mochi.png" class="pack pack3" alt="Banana Mochi">
+            <img src="dragonfruit-bubblegum.png" class="pack pack2">
 
-</div>
+            <img src="banana-mochi.png" class="pack pack3">
 
-<h2 class="loading-text">
-Checking your pack<span id="dots">.</span>
-</h2>
+        </div>
 
-</section>
+        <h2>Checking Your Pack</h2>
 
-<!-- WINNER -->
+        <div id="dots" class="dots">.</div>
 
-<section class="result winner hidden" id="winner">
+    </section>
 
-<h1>🏆 CONGRATULATIONS! 🏆</h1>
 
-<h2>🎉 YOU FOUND A WINNING PACK! 🎉</h2>
+    <!-- WINNER -->
 
-<h3>FREE 3.5 OF HEEMZ CANDY</h3>
+    <div id="winnerOverlay" class="overlay">
 
-<div class="code">
+        <button class="close-btn" onclick="closeOverlay()">
+            ✕
+        </button>
 
-HEEM-XXXX-XXXX
+        <div class="winner-card">
 
-</div>
+            <div class="trophy">
+                🏆
+            </div>
 
-<p>
+            <h1>CONGRATULATIONS!</h1>
 
-⚠️ This redemption code is valid for ONE-TIME USE ONLY.
+            <h2>🎉 YOU FOUND A WINNING PACK 🎉</h2>
 
-</p>
+            <h3>FREE 3.5 OF HEEMZ CANDY</h3>
 
-<p>
+            <div id="codeBox" class="code-box">
 
-Once redeemed, this code is permanently invalid.
+                HEEM-A7X4-K9P2
 
-</p>
+            </div>
 
-</section>
+            <p class="warning">
 
-<div class="contact-box">
-    <h4>📩 CLAIM YOUR HEEM</h4>
+                ⚠️ This redemption code is valid for
+                <strong>ONE-TIME USE ONLY.</strong>
 
-    <p>DM <strong>@bigboss.kil</strong> on Instagram</p>
+                <br><br>
 
-    <p><strong>Include:</strong></p>
+                Once redeemed, this code becomes permanently invalid.
 
-    <ul>
-        <li>Your redemption code</li>
-        <li>A photo of your winning SWIRLZ pack</li>
-    </ul>
-</div>
-  
-<!-- LOSER -->
+            </p>
 
-<section class="result loser hidden" id="loser">
+            <div class="contact-box">
 
-<h1>😔 Better Luck Next Time!</h1>
+                <h4>📩 CLAIM YOUR PRIZE</h4>
 
-<p>
+                <p>
 
-This pack wasn't a winner.
+                    DM <strong>@bigboss.kil</strong>
 
-</p>
+                </p>
 
-<a
-href="https://www.instagram.com/bigboss.kil"
-target="_blank">
+                <p>
 
-🔥 Follow @BigHeemExotics 🍭
+                    Send:
 
-</a>
+                </p>
 
-</section>
+                <ul>
 
-<script src="script.js"></script>
+                    <li>Your redemption code</li>
+
+                    <li>A photo of your winning SWIRLZ pack</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOSER -->
+
+    <div id="loserOverlay" class="overlay">
+
+        <button class="close-btn" onclick="closeOverlay()">
+            ✕
+        </button>
+
+        <div class="loser-card">
+
+            <div class="sad">
+
+                🍭
+
+            </div>
+
+            <h1>Better Luck Next Time!</h1>
+
+            <p>
+
+                This pack wasn't a winner.
+
+            </p>
+
+            <div class="contact-box">
+
+                <p>
+
+                    Follow & DM
+
+                </p>
+
+                <h3>@bigboss.kil</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
