@@ -60,7 +60,6 @@ body{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-
     position:absolute;
 
     bottom:40px;
@@ -69,18 +68,17 @@ body{
 
     transform:translateX(-50%);
 
+    width:100%;
+
+    text-align:center;
+
     font-size:64px;
 
     color:#ffffff;
 
     animation:bounce 1.5s infinite;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
+    pointer-events:none;
 }
 
 @keyframes bounce{
