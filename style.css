@@ -91,7 +91,7 @@ section{
     font-size:64px;
     color:#fff;
     animation:bounce 1.5s infinite;
-    margin-top:20px;
+    margin-top:40px;
 }
 
 @keyframes bounce{
