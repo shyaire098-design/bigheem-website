@@ -91,9 +91,9 @@ section{
 
 .scroll-arrow{
     position:absolute;
-    left:53%;
-    bottom:65px;
-    transform:translateX(-50%);
+    left:50%;
+    bottom:95px;
+    transform:translateX(-65%, 20px);
     z-index:9999;
     animation:bounce 1.5s infinite;
 }
