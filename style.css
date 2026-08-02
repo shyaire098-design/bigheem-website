@@ -91,11 +91,11 @@ section{
     justify-content:center;
     align-items:center;
 
-    font-size:60px;
-
+    font-size:64px;
     color:#fff;
 
-    margin-top:10px;
+    margin-top:70px;
+    margin-bottom:110px;
 
     animation:bounce 1.5s infinite;
 }
