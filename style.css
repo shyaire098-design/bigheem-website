@@ -90,19 +90,17 @@ section{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-    position:fixed;
+    position:absolute;
     left:50%;
     bottom:95px;
     transform:translateX(-50%);
     z-index:9999;
-    pointer-events:none;
-
     animation:bounce 1.5s infinite;
 }
 
 .scroll-arrow img{
     display:block;
-    width:70px;
+    width:80px;
     height:auto;
 }
 
