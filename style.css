@@ -87,15 +87,16 @@ section{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-    position:absolute;
-    bottom:calc(env(safe-area-inset-bottom) + 35px);
+    position:fixed;
+    bottom:110px;
     left:50%;
     transform:translateX(-50%);
     color:#fff;
-    font-size:64px;
+    font-size:60px;
     line-height:1;
     animation:bounce 1.5s infinite;
-    z-index:100;
+    z-index:999;
+    pointer-events:none;
 }
 
 @keyframes bounce{
@@ -534,8 +535,4 @@ section{
     font-size:62px;
 }
 
-}
-
-body{
-    background:red !important;
 }
