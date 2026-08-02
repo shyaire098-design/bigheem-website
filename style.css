@@ -93,7 +93,7 @@ section{
     position:absolute;
 
     left:50%;
-    bottom:0px;
+    bottom:-5px;
 
     transform:translate(-50%, 35px);
 
