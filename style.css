@@ -88,14 +88,14 @@ section{
 
 .scroll-arrow{
     position:fixed;
-    bottom:110px;
     left:50%;
+    bottom:110px;
     transform:translateX(-50%);
     color:#fff;
     font-size:60px;
     line-height:1;
-    animation:bounce 1.5s infinite;
     z-index:999;
+    animation:bounce 1.5s infinite;
     pointer-events:none;
 }
 
