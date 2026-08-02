@@ -248,42 +248,44 @@ section{
 /* ---------- OVERLAY ---------- */
 
 .overlay{
+    position:fixed;
+    inset:0;
+
     display:none;
+    justify-content:center;
+    align-items:flex-start;
+
+    background:#000;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    padding:70px 20px 40px;
+
+    z-index:9999;
+
+    -webkit-overflow-scrolling:touch;
 }
 
 .overlay.show{
     display:flex;
 }
 
-@keyframes fadeIn{
-
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-
-}
-
 /* ---------- WINNER CARD ---------- */
 
 .winner-card,
 .loser-card{
+    width:100%;
+    max-width:360px;
 
-    width:100%;
+    margin:0 auto;
 
-    max-width:360px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
 
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    text-align:center;
-
+    flex-shrink:0;
 }
 
 /* ---------- ICONS ---------- */
@@ -543,4 +545,13 @@ section{
     font-size:62px;
 }
 
+}
+
+.overlay *{
+    max-width:100%;
+}
+
+.code-box,
+.contact-box{
+    width:100%;
 }
