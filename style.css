@@ -91,31 +91,37 @@ section{
 
 .scroll-arrow{
     position:absolute;
+
     left:50%;
-    bottom:95px;
-    transform:translateX(-65%, 20px);
-    z-index:9999;
+    bottom:35px;
+
+    transform:translate(-65%, 20px);
+
+    z-index:999;
+
     animation:bounce 1.5s infinite;
+
+    pointer-events:none;
 }
 
 .scroll-arrow img{
-    display:block;
-    width:400px;
+    width:100px;
     height:auto;
+    display:block;
 }
 
 @keyframes bounce{
 
     0%,20%,50%,80%,100%{
-        transform:translateY(0);
+        transform:translate(-65%, 20px) translateY(0);
     }
 
     40%{
-        transform:translateY(-12px);
+        transform:translate(-65%, 20px) translateY(-12px);
     }
 
     60%{
-        transform:translateY(-6px);
+        transform:translate(-65%, 20px) translateY(-6px);
     }
 
 }
