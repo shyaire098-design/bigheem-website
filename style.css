@@ -31,13 +31,16 @@ body{
 
 html,
 body{
+    margin:0;
+    background:#000;
+    color:#fff;
+    font-family:"Fredoka",sans-serif;
 
     width:100%;
-
     max-width:100%;
 
     overflow-x:hidden;
-
+    overflow-y:auto;
 }
 
 section{
@@ -517,7 +520,7 @@ section{
 }
 
 /* iPhone Safari */
-@media (max-width: 430px){
+@media (max-width:430px){
 
 .hero{
     min-height:100dvh;
@@ -535,10 +538,7 @@ section{
 }
 
 .scroll-arrow{
-    position:absolute;
-    left:50%;
     bottom:95px;
-    transform:translateX(-50%);
     font-size:62px;
 }
 
