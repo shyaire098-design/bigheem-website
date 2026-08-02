@@ -88,10 +88,17 @@ section{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:50px;
+
     font-size:64px;
+
     color:#fff;
+
     animation:bounce 1.5s infinite;
-    margin-top:40px;
 }
 
 @keyframes bounce{
