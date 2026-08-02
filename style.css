@@ -434,15 +434,13 @@ section{
 /* ---------- CLOSE BUTTON ---------- */
 
 .close-btn{
-
     position:fixed;
 
-    top:max(16px, env(safe-area-inset-top));
+    top:20px;
+    right:20px;
 
-    right:18px;
-
-    width:46px;
-    height:46px;
+    width:44px;
+    height:44px;
 
     border:none;
     border-radius:50%;
@@ -457,9 +455,11 @@ section{
     justify-content:center;
     align-items:center;
 
-    z-index:10000;
-
     cursor:pointer;
+    z-index:10001;
+
+    padding:0;
+    margin:0;
 }
 
 /* ---------- MOBILE ---------- */
@@ -541,4 +541,12 @@ section{
 .code-box,
 .contact-box{
     width:100%;
+}
+
+.overlay *{
+    max-width:100%;
+}
+
+body.overlay-open{
+    overflow:hidden;
 }
