@@ -507,3 +507,31 @@ section{
     }
 
 }
+
+/* iPhone Safari */
+@media (max-width: 430px){
+
+.hero{
+    min-height:100dvh;
+    padding:20px 18px;
+}
+
+.bigheem{
+    width:180px;
+    margin-bottom:38px;
+}
+
+.swirlz{
+    width:300px;
+    margin-bottom:120px;
+}
+
+.scroll-arrow{
+    position:absolute;
+    left:50%;
+    bottom:95px;
+    transform:translateX(-50%);
+    font-size:62px;
+}
+
+}
