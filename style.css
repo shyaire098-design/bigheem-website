@@ -53,15 +53,13 @@ section{
 /* ---------- HERO ---------- */
 
 .hero{
-    position:relative;
     min-height:100svh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    gap:50px;
-    padding:30px 20px 120px;
+    padding:40px 20px;
 }
 
 .logo{
@@ -88,16 +86,9 @@ section{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    margin-top:50px;
-
-    font-size:64px;
-
+    font-size:60px;
     color:#fff;
-
+    margin-top:70px;
     animation:bounce 1.5s infinite;
 }
 
