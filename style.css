@@ -60,6 +60,7 @@ section{
     justify-content:center;
     align-items:center;
     text-align:center;
+    gap:50px;
     padding:30px 20px 120px;
 }
 
@@ -87,23 +88,10 @@ section{
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:40px;
-
-    transform:translateX(-50%);
-
     font-size:64px;
-
     color:#fff;
-
-    z-index:100;
-
     animation:bounce 1.5s infinite;
-
+    margin-top:20px;
 }
 
 @keyframes bounce{
