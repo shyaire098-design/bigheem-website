@@ -246,28 +246,11 @@ section{
 /* ---------- OVERLAY ---------- */
 
 .overlay{
-    position:fixed;
-    inset:0;
-
-    display:none;
-    justify-content:center;
-    align-items:center;
-
-    background:#000;
-
-    z-index:9999;
-
-    padding:
-        max(70px, calc(env(safe-area-inset-top) + 20px))
-        20px
-        max(20px, calc(env(safe-area-inset-bottom) + 20px));
-
-    overflow:hidden;
+    display:none;
 }
 
 .overlay.show{
-    display:flex;
-    animation:fadeIn .35s ease;
+    display:flex;
 }
 
 @keyframes fadeIn{
