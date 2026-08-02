@@ -91,22 +91,19 @@ section{
 
 .scroll-arrow{
     position:fixed;
-    left:0;
-    right:0;
-    bottom:110px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:#fff;
-    font-size:60px;
-    line-height:1;
-
-    z-index:999;
+    left:50%;
+    bottom:95px;
+    transform:translateX(-50%);
+    z-index:9999;
     pointer-events:none;
 
     animation:bounce 1.5s infinite;
+}
+
+.scroll-arrow img{
+    display:block;
+    width:70px;
+    height:auto;
 }
 
 @keyframes bounce{
