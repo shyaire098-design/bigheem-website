@@ -95,7 +95,7 @@ section{
     left:50%;
     bottom:0px;
 
-    transform:translate(-50%, 80px);
+    transform:translate(-50%, 100px);
 
     z-index:999;
 
@@ -113,15 +113,15 @@ section{
 @keyframes bounce{
 
     0%,20%,50%,80%,100%{
-        transform:translate(-50%, 80px) translateY(0);
+        transform:translate(-50%, 100px) translateY(0);
     }
 
     40%{
-        transform:translate(-50%, 80px) translateY(-12px);
+        transform:translate(-50%, 100px) translateY(-12px);
     }
 
     60%{
-        transform:translate(-50%, 80px) translateY(-6px);
+        transform:translate(-50%, 100px) translateY(-6px);
     }
 
 }
