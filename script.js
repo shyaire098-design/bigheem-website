@@ -2,10 +2,13 @@
 // SETTINGS
 // ===========================
 
-const isWinner = true;
+const isWinner = typeof window.isWinner !== "undefined"
+    ? window.isWinner
+    : false;
 
-// Change this for each winning QR
-const redemptionCode = "HEEM-A7X4-K9P2";
+const redemptionCode = typeof window.redemptionCode !== "undefined"
+    ? window.redemptionCode
+    : "";
 
 
 // ===========================
