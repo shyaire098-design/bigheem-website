@@ -45,22 +45,25 @@ body{
 }
 
 .bigheem{
-    width:min(290px,82vw);
-    margin-bottom:28px;
+    width:min(180px,50vw);
+    margin-bottom:40px;
 }
 
 .swirlz{
-    width:min(230px,68vw);
-    margin-bottom:65px;
+    width:min(340px,82vw);
+    margin-bottom:120px;
 }
 
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
-    font-size:58px;
-    line-height:1;
+    font-size:64px;
+    color:#fff;
+    position:absolute;
+    bottom:55px;
+    left:50%;
+    transform:translateX(-50%);
     animation:bounce 1.5s infinite;
-    opacity:.95;
 }
 
 @keyframes bounce{
