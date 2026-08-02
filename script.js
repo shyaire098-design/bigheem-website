@@ -82,11 +82,15 @@ observer.observe(loading);
 
 function startLoading(){
 
-    const dotTimer=animateDots();
+    const dotTimer = animateDots();
 
-    setTimeout(()=>{
+    setTimeout(() => {
 
         clearInterval(dotTimer);
+
+        // Hide the page underneath
+        document.querySelector(".hero").style.display = "none";
+        document.querySelector(".loading").style.display = "none";
 
         if(isWinner){
 
@@ -97,6 +101,9 @@ function startLoading(){
             loserOverlay.classList.add("show");
 
         }
+
+        // Stop page scrolling
+        document.body.style.overflow = "hidden";
 
     },3000);
 
@@ -110,7 +117,13 @@ function startLoading(){
 function closeOverlay(){
 
     winnerOverlay.classList.remove("show");
-
     loserOverlay.classList.remove("show");
+
+    // Bring the page back
+    document.querySelector(".hero").style.display = "flex";
+    document.querySelector(".loading").style.display = "flex";
+
+    // Allow scrolling again
+    document.body.style.overflow = "auto";
 
 }
