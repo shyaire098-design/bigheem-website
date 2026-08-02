@@ -81,14 +81,22 @@ section{
     width:360px;
     max-width:85vw;
     height:auto;
+    margin-bottom:60px;
 }
 
 /* ---------- SCROLL ARROW ---------- */
 
 .scroll-arrow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     font-size:60px;
+
     color:#fff;
-    margin-top:70px;
+
+    margin-top:10px;
+
     animation:bounce 1.5s infinite;
 }
 
