@@ -103,7 +103,7 @@ function startLoading(){
         }
 
         // Stop page scrolling
-        document.body.style.overflow = "hidden";
+        document.body.classlist.add("overlay-open");
 
     },3000);
 
@@ -124,6 +124,6 @@ function closeOverlay(){
     document.querySelector(".loading").style.display = "flex";
 
     // Allow scrolling again
-    document.body.style.overflow = "auto";
+    document.body.classlist.remove("overlay-open");
 
 }
